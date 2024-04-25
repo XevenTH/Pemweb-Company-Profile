@@ -1,0 +1,21 @@
+:root {
+  --v-color-main: #7F00FF;
+  --v-color-secondary: #51356d;
+}
+
+.neo-bg-main {
+  background-color: var(--v-color-main);
+}
+
+.neo-text-main {
+  color: var(--v-color-main);
+}
+
+.neo-btn-link {
+  padding: 0;
+}
+
+.neo-btn-link:hover {
+  color: var(--v-color-secondary);
+  text-decoration: underline;
+}
