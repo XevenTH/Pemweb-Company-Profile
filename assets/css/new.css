@@ -19,3 +19,30 @@
   color: var(--v-color-secondary);
   text-decoration: underline;
 }
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 20%;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0056b3;
+}
