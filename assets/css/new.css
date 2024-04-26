@@ -19,3 +19,12 @@
   color: var(--v-color-secondary);
   text-decoration: underline;
 }
+
+.neo-service-title-card {
+  color: white;
+  transition: ease-in-out .2s;
+}
+
+.neo-service-title-card:hover {
+  color: var(--v-color-main);
+}
