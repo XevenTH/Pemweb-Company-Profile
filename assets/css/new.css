@@ -1,6 +1,6 @@
 :root {
   --v-color-main: #7F00FF;
-  --v-color-secondary: #51356d;
+  --v-color-secondary: #6200c4;
 }
 
 .neo-bg-main {
@@ -15,16 +15,63 @@
   padding: 0;
 }
 
+.neo-link {
+  text-decoration: none;
+}
+
 .neo-btn-link:hover {
   color: var(--v-color-secondary);
   text-decoration: underline;
 }
 
-.neo-service-title-card {
+.neo-link:hover {
+  color: var(--v-color-secondary);
+  text-decoration: underline;
+}
+
+.neo-footer-card *{
+  background: transparent;
+  border: 0;
   color: white;
+  text-decoration: none;
+}
+
+.neo-footer-card {
+  background: transparent;
+  border: 0;
+}
+
+.neo-footer-card .card-link i{
+  font-size: 1.5rem;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  /* background-color: #007bff; */
+  background-color: var(--v-color-main);
+  color: white;
+  cursor: pointer;
+  padding: .25rem .6rem;
+  border-radius: 20%;
+  font-size: 1.5rem;
   transition: ease-in-out .2s;
 }
 
-.neo-service-title-card:hover {
-  color: var(--v-color-main);
+#scrollToTopBtn:hover {
+  /* background-color: #0056b3; */
+  background-color: var(--v-color-secondary);
 }

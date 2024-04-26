@@ -12,7 +12,40 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="assets/css/new.css">
-    <title>KurobaMedia</title>
+    <title>KurobaMedia - Profil</title>
+
+    <style>
+        .neo-keunggulan-title-card {
+            margin-bottom: 30px;
+            max-height: 180px;
+            justify-content: center;
+            transition: ease-in-out .3s;
+        }
+        
+        .neo-keunggulan-title-card:hover {
+            max-height: 300px;
+        }
+        
+        .neo-keunggulan-title-card p {
+            margin-top: 15px;
+            transition: ease-in-out .3s;
+            opacity: 0;
+        }
+
+        .neo-keunggulan-title-card:hover p {
+            opacity: 100;
+        }
+
+        .neo-keunggulan-card:nth-child(even) i {
+            color: var(--v-color-main);
+        }
+
+        .neo-carousel-jasa {
+            max-height: 12rem;
+            display: flex;
+            align-items: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -27,16 +60,16 @@
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse text-start" id="navbarNav">
+                <div class="collapse navbar-collapse text-center" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Tentang</a>
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="About.html">Tentang</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="services.html">Layanan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="gallery.html">Galeri</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contact.html">Kontak</a>
@@ -52,18 +85,89 @@
             <p>Layanan kreasi andalanmu.</p>
         </header>
 
-        <!-- Tentang Kami (Ringkas) Section -->
+        <!-- Tentang Section -->
         <section id="about" class="p-5">
-            <h2>Tentang Kami</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-12 pb-3">
+                    <img src="assets/images/decors/undraw_creative_team_re_85gn.svg" alt="teams"
+                        style="max-width: 100%;">
+                </div>
+                <div class="col-lg-6 col-sm-12">
+                    <div class="h-100 d-flex flex-column align-items-center justify-content-center">
+                        <span class="display-5 mb-3 text-bold">KurobaMedia</span>
+                        <p class="text-justify">
+                            <span class="ps-4">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Proin
+                            faucibus a
+                            tellus commodo maximus. In hendrerit odio quis magn aliquet, sed volutpat augue euismod.
+                            Proin
+                            faucibus lectus
+                            in nunc hendrerit, nec varius eros gravida. Curabitur ac tortor urna. Vestibulum nibh
+                            libero,ornare
+                            nec lorem fringilla, lacinia aliquam risus. Donec fringilla turpis vel lectus hendrerit
+                            pharetra
+                            ac
+                            a arcu. Sed molestie pulvinar orci, non euismod velit fringilla nec. Mauris mauris turpis,
+                            pretium
+                            ut arcu in, molestie ornare ligula. Proin at odio tincidunt, elementum lacus in, dignissim
+                            turpis.
+                            Ut eleifend ipsum a justo tincidunt, quis rhoncus dui hendrerit. Morbi pulvinar
+                            rhoncus sem, a euismod dui viverra ac.
+                            Kami tidak pernah meragukan tamu, mesikipun permintaannya aneh-aneh.
+                        </p>
+                        <a class="neo-link neo-text-main" href="contact.html">Selebihnya tentang kami..</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Galeri Section -->
+        <!-- Keunggulan Section -->
         <section id="about" class="p-5 bg-light">
-            <h2>Pratinjau Galeri</h2>
+            <h2>Mengapa memilih kami?</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <!-- Slideshow -->
+
             <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 neo-keunggulan-card">
+                    <div class="card text-bg-dark bg-gradient mb-3">
+                        <div class="card-body neo-keunggulan-title-card">
+                            <i class="bi bi-check2-all" style="font-size: 5rem;"></i>
+                            <h5 class="card-title">Responsif</h5>
+                            <p class="card-text">CS yang responsif dan ramah siap membantu anda.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 neo-keunggulan-card">
+                    <div class="card text-bg-dark bg-gradient mb-3">
+                        <div class="card-body neo-keunggulan-title-card">
+                            <i class="bi bi-magic" style="font-size: 5rem;"></i>
+                            <h5 class="card-title">Kreatif</h5>
+                            <p class="card-text">Tim yang berpengalaman dan kreatif siap membantu segala kebutuhan anda.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 neo-keunggulan-card">
+                    <div class="card text-bg-dark bg-gradient mb-3">
+                        <div class="card-body neo-keunggulan-title-card">
+                            <i class="bi bi-cloud-check-fill" style="font-size: 5rem;"></i>
+                            <h5 class="card-title">Penyimpanan Cloud</h5>
+                            <p class="card-text">File desain anda akan kami simpan dalam penyimpanan cloud yang aman.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 neo-keunggulan-card">
+                    <div class="card text-bg-dark bg-gradient mb-3">
+                        <div class="card-body neo-keunggulan-title-card">
+                            <i class="bi bi-clock" style="font-size: 5rem;"></i>
+                            <h5 class="card-title">Tepat Waktu</h5>
+                            <p class="card-text">Kami berusaha memberikan layanan yang pasti dan tepat waktu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slideshow -->
+            <!-- <div class="row justify-content-center">
                 <div class="col-lg-6 col-sm-12">
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -102,57 +206,153 @@
                     </p>
                     <button type="button" class="btn neo-btn-link neo-text-main">Lihat lebih banyak..</button>
                 </div>
-            </div>
+            </div> -->
         </section>
 
         <!-- Layanan (Judul layanan) Section -->
         <section id="services" class="p-5">
-            <h2>Layanan</h2>
+            <h2>Layanan kami</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
             <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card text-bg-dark bg-gradient mb-3">
-                        <div class="card-body neo-service-title-card">
-                            <i class="bi bi-pencil-square" style="font-size: 5rem;"></i>
-                            <h5 class="card-title">Desain Logo</h5>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-bg-dark mb-3">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded neo-carousel-jasa">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/artworks/poster (1).jpg" class="d-block w-100"
+                                        alt="poster (1)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/poster (2).jpg" class="d-block w-100"
+                                        alt="poster (2)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/poster (3).jpg" class="d-block w-100"
+                                        alt="poster (3)">
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card text-bg-dark bg-gradient mb-3">
-                        <div class="card-body neo-service-title-card">
-                            <i class="bi bi-pencil-square" style="font-size: 5rem;"></i>
+                        <div class="card-body">
                             <h5 class="card-title">Desain Poster</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-sm-6">
-                    <div class="card text-bg-dark bg-gradient mb-3">
-                        <div class="card-body neo-service-title-card">
-                            <i class="bi bi-pencil-square" style="font-size: 5rem;"></i>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-bg-dark mb-3">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded neo-carousel-jasa">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/artworks/logo (1).jpg" class="d-block w-100" alt="logo (1)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/logo (2).jpg" class="d-block w-100" alt="logo (2)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/logo (3).jpg" class="d-block w-100" alt="logo (3)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Desain Logo</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card text-bg-dark mb-3">
+                        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner rounded neo-carousel-jasa">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/artworks/banner (1).jpg" class="d-block w-100"
+                                        alt="banner (1)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/banner (2).jpg" class="d-block w-100"
+                                        alt="banner (2)">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/artworks/banner (3).jpg" class="d-block w-100"
+                                        alt="banner (3)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
                             <h5 class="card-title">Desain Banner</h5>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-12">
+                    <p class="pt-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Cumque, recusandae facilis. Nam quasi aut quos,
+                        numquam beatae totam corporis? Facilis ad nihil cupiditate
+                        animi voluptatibus, aspernatur pariatur commodi! Cum, tempore!
+                    </p>
+                    <a class="neo-link neo-text-main" href="service.html">Lihat lebih banyak..</a>
                 </div>
             </div>
         </section>
 
         <!-- Kontak Section -->
         <section id="contact" class="p-5 bg-light">
-            <h2>Kontak</h2>
+            <h2>Temukan kami</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <a class="neo-link neo-text-main" href="contact.html">Konsultasi sekarang..</a>
+            <div class="ratio ratio-16x9 mt-3">
+                <!-- <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" title="Lokasi Kantor" allowfullscreen></iframe> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.6290485340696!2d112.72722877041092!3d-7.31005773228806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fbd1cb925a1d%3A0x1dbecb0b2e9b059f!2sUniversitas%20Telkom%20Surabaya!5e0!3m2!1sid!2sid!4v1714111430537!5m2!1sid!2sid"
+                    width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
 
         <!-- Footer -->
         <footer class="footer bg-dark bg-gradient text-white text-center p-3">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="card neo-footer-card">
+                        <div class="card-body">
+                            <a href="contact.html">
+                                <h5 class="card-title">Kontak</h5>
+                            </a>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">+62 895-4554-9999</li>
+                            <li class="list-group-item">kurobamedia@gmail.com</li>
+                            <li class="list-group-item">Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa Timur 60231</li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="#" class="card-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="#" class="card-link">
+                                <i class="bi bi-twitter-x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
             <p>© 2024 KurobaMedia. All rights reserved.</p>
         </footer>
+
+        <button id="scrollToTopBtn" title="Go to top">
+            <i class="bi bi-arrow-up-short"></i>
+        </button>
+
     </div>
+
 
     <!-- Boostrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script src="assets/javascript/new.js"></script>
 </body>
 
 </html>
