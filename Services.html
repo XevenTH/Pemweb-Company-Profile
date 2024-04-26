@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/new.css" />
+    <title>KurobaMedia - Layanan</title>
+    <style>
+      .neo-btn-pesan {
+        background: var(--v-color-secondary);
+        font-size: 1.5rem;
+        color: white;
+        padding: 0.25rem 0 0.5rem 0;
+      }
+
+      .service sub {
+        font-size: 1rem;
+      }
+
+      .service b {
+        font-size: 4rem;
+      }
+
+      .service-artwork img {
+        box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container-100 text-center">
+      <!-- Navigation Bar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid" style="padding: 0 3rem 0 3rem">
+          <a class="navbar-brand" href="#">
+            <img
+              src="assets/images/logos/company-logo-main.png"
+              alt="KurobaMedia"
+              style="width: 3rem"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">Tentang</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="Services.html">Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">Kontak</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <header class="hero bg-dark bg-gradient text-white text-center p-5">
+        <h1>Paket dan Hasil Desain Kami</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </header>
+
+      <!-- Services -->
+      <section id="layanan" class="p-5">
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="pills-poster-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-poster"
+              type="button"
+              role="tab"
+              aria-controls="pills-poster"
+              aria-selected="true"
+            >
+              Desain Poster
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-logo-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-logo"
+              type="button"
+              role="tab"
+              aria-controls="pills-logo"
+              aria-selected="false"
+            >
+              Desain Logo
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="pills-banner-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#pills-banner"
+              type="button"
+              role="tab"
+              aria-controls="pills-banner"
+              aria-selected="false"
+            >
+              Desain Banner
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="pills-poster"
+            role="tabpanel"
+            aria-labelledby="pills-poster-tab"
+            tabindex="0"
+          >
+            <!-- poster-start -->
+            <div class="container">
+              <h2>Paket Desain Poster</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket A5</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>50</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">1 Pilihan Konsep Poster</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 1-2 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+              </div>
+              <hr />
+
+              <h2 class="mt-4">Hasil Desain Poster</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/poster (1).jpg"
+                    alt="poster (1)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/poster (2).jpg"
+                    alt="poster (2)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/poster (3).jpg"
+                    alt="poster (3)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/poster (4).jpg"
+                    alt="poster (4)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/poster (5).jpg"
+                    alt="poster (5)"
+                    class="w-100 rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- poster-end -->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-logo"
+            role="tabpanel"
+            aria-labelledby="pills-logo-tab"
+            tabindex="0"
+          >
+            <!-- Logo-start -->
+            <div class="container">
+              <h2>Paket Desain Logo</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket HEMAT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>199</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">1 Pilihan Konsep Logo</li>
+                      <li class="list-group-item">Revisi Hingga 3x</li>
+                      <li class="list-group-item">Proses 1-2 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket CERMAT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>299</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">2 Pilihan Konsep Logo</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 1-2 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket KILAT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>355</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">2 Pilihan Konsep Logo</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 1-24 Jam</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket MASKOT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>255</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">1 Logo Karakter/Kartun</li>
+                      <li class="list-group-item">Revisi Hingga 3x</li>
+                      <li class="list-group-item">Proses 1-2 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket HEBAT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>499</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">3 Pilihan Konsep Logo</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 1-3 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                      <li class="list-group-item">
+                        Desain Kartu Nama, Kop Surat A4, dan Amplop DL
+                      </li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket HEBAT</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>997</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">3 Pilihan Konsep Logo</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 2-3 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                      <li class="list-group-item">
+                        Filosofi dan Brand Guideline
+                      </li>
+                      <li class="list-group-item">
+                        Desain Kartu Nama, Kop Surat A4, dan Amplop DL
+                      </li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <h2 class="mt-4">Hasil Desain Logo</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (1).jpg"
+                    alt="logo (1)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (2).jpg"
+                    alt="logo (2)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (3).jpg"
+                    alt="logo (3)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (4).jpg"
+                    alt="logo (4)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (5).jpg"
+                    alt="logo (5)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (6).jpg"
+                    alt="logo (6)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (7).jpg"
+                    alt="logo (7)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (8).jpg"
+                    alt="logo (8)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/logo (9).jpg"
+                    alt="logo (9)"
+                    class="w-100 rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- Logo-end -->
+          </div>
+          <div
+            class="tab-pane fade"
+            id="pills-banner"
+            role="tabpanel"
+            aria-labelledby="pills-banner-tab"
+            tabindex="0"
+          >
+            <!-- poster-start -->
+            <div class="container">
+              <h2>Paket Desain Banner</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-md-6 col-sm-12 text-center mb-4">
+                  <div class="service">
+                    <div class="circle-icon position-relative mx-auto">
+                      <i
+                        class="fa-solid fa-pen fa-2x position-absolute top-50 start-50 translate-middle"
+                      ></i>
+                    </div>
+                    <h3 class="mt-4">Paket ASIK</h3>
+                    <div class="neo-service-price mt-4">
+                      <sub>Rp.</sub>
+                      <b>50</b>
+                      <sub>.000</sub>
+                    </div>
+                    <ul class="list-group list-group-flush mt-3">
+                      <li class="list-group-item">1 Pilihan Konsep Banner</li>
+                      <li class="list-group-item">Revisi Sepuasnya</li>
+                      <li class="list-group-item">Proses 1-2 Hari</li>
+                      <li class="list-group-item">File Master EPS (CDR/AI)</li>
+                      <li class="list-group-item">File HD (JPG|PNG|PDF)</li>
+                    </ul>
+                    <a class="btn neo-btn-pesan mt-3 w-100">Pesan</a>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+
+              <h2 class="mt-4">Hasil Desain Banner</h2>
+              <div class="row justify-content-center mt-4">
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/banner (1).jpg"
+                    alt="banner (1)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/banner (2).jpg"
+                    alt="banner (2)"
+                    class="w-100 rounded"
+                  />
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mb-4 service-artwork">
+                  <img
+                    src="assets/images/artworks/banner (3).jpg"
+                    alt="banner (3)"
+                    class="w-100 rounded"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- poster-end -->
+          </div>
+
+          <!-- <div class="tab-pane fade" id="pills-banner" role="tabpanel" aria-labelledby="pills-banner-tab"
+                    tabindex="0">
+                </div> -->
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer bg-dark bg-gradient text-white text-center p-3">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-sm-12">
+            <div class="card neo-footer-card">
+              <div class="card-body">
+                <a href="contact.html">
+                  <h5 class="card-title">Kontak</h5>
+                </a>
+              </div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">+62 895-4554-9999</li>
+                <li class="list-group-item">kurobamedia@gmail.com</li>
+                <li class="list-group-item">
+                  Jl. Ketintang No.156, Ketintang, Kec. Gayungan, Surabaya, Jawa
+                  Timur 60231
+                </li>
+              </ul>
+              <div class="card-body">
+                <a href="#" class="card-link">
+                  <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#" class="card-link">
+                  <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#" class="card-link">
+                  <i class="bi bi-twitter-x"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <p>© 2024 KurobaMedia. All rights reserved.</p>
+      </footer>
+
+      <button id="scrollToTopBtn" title="Go to top">
+        <i class="bi bi-arrow-up-short"></i>
+      </button>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/4600ab9fd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/javascript/new.js"></script>
+  </body>
+</html>

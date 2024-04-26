@@ -15,9 +15,34 @@
   padding: 0;
 }
 
+.neo-link {
+  text-decoration: none;
+}
+
 .neo-btn-link:hover {
   color: var(--v-color-secondary);
   text-decoration: underline;
+}
+
+.neo-link:hover {
+  color: var(--v-color-secondary);
+  text-decoration: underline;
+}
+
+.neo-footer-card *{
+  background: transparent;
+  border: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.neo-footer-card {
+  background: transparent;
+  border: 0;
+}
+
+.neo-footer-card .card-link i{
+  font-size: 1.5rem;
 }
 
 .text-bold {
@@ -36,13 +61,101 @@
   z-index: 99;
   border: none;
   outline: none;
-  background-color: #007bff;
+  /* background-color: #007bff; */
+  background-color: var(--v-color-main);
   color: white;
   cursor: pointer;
-  padding: 15px;
+  padding: .25rem .6rem;
   border-radius: 20%;
+  font-size: 1.5rem;
+  transition: ease-in-out .2s;
 }
 
 #scrollToTopBtn:hover {
-  background-color: #0056b3;
+  /* background-color: #0056b3; */
+  background-color: var(--v-color-secondary);
+}
+
+/* Layanan */
+
+.subtitle {
+  font-size: 18px;
+}
+
+.service {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  padding: 40px;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05);
+}
+
+.circle-icon {
+  width: 70px;
+  height: 70px;
+  background-color: #51356d;
+  border-radius: 50%;
+}
+
+.service i {
+  color: white;
+}
+
+.service ul *{
+  background: transparent;
+}
+
+.service .service-artwork img {
+  width: 100%;
+  box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+/* Hover */
+
+.service:hover {
+  background-color: #51356d;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover .circle-icon {
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover h3 {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+.service:hover p {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover li {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover i {
+  color: #51356d;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover .neo-service-price {
+  color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.service:hover .neo-btn-pesan {
+  background: var(--v-color-main);
+  color: white;
+}
+
+#layanan .nav-item button{
+  color: var(--v-color-secondary);
+}
+
+#layanan button.active {
+  background: var(--v-color-secondary);
+  color: white;
 }
